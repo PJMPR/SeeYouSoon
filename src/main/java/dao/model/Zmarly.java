@@ -10,10 +10,6 @@ public class Zmarly implements IHaveId {
     private Date dataUrodzenia;
     private String imie;
     private String Nazwisko;
-    private int idMiejscaPochowku;
-    private boolean czyWZiemie;
-    private boolean abonamentStatus;
-    private boolean czySkremowany;
 
     @Override
     public Integer getId() {
@@ -40,22 +36,6 @@ public class Zmarly implements IHaveId {
         return Nazwisko;
     }
 
-    public int getIdMiejscaPochowku() {
-        return idMiejscaPochowku;
-    }
-
-    public boolean isCzyWZiemie() {
-        return czyWZiemie;
-    }
-
-    public boolean isAbonamentStatus() {
-        return abonamentStatus;
-    }
-
-    public boolean isCzySkremowany() {
-        return czySkremowany;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -78,22 +58,6 @@ public class Zmarly implements IHaveId {
 
     public void setNazwisko(String Nazwisko) {
         this.Nazwisko = Nazwisko;
-    }
-
-    public void setIdGrobu(int idGrobu) {
-        this.idMiejscaPochowku = idMiejscaPochowku;
-    }
-
-    public void setCzyWZiemie(boolean czyWZiemie) {
-        this.czyWZiemie = czyWZiemie;
-    }
-
-    public void setAbonamentStatus(boolean abonamentStatus) {
-        this.abonamentStatus = abonamentStatus;
-    }
-
-    public void setCzySkremowany(boolean czySkremowany) {
-        this.czySkremowany = czySkremowany;
     }
 
 }

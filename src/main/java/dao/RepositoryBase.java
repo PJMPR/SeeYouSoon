@@ -155,7 +155,7 @@ public abstract class RepositoryBase<TEntity extends IHaveId> implements IReposi
     public String deleteSql() {
         return "DELETE FROM "
                 + tableName()
-                + "where id = ?";
+                + " where id = ?";
     }
 
     public void deletePrepare(TEntity entity) throws SQLException {
